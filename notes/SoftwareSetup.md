@@ -63,7 +63,7 @@ git clone git@github.com:TheEvergreenStateCollege/dgp-26wi.git
 
 14. Change into your cloned directory and build the Battlecode client
 ```
-cd dgp-25au/java
+cd dgp-26wi/java
 ```
 
 15. Update the game engine version and build it
