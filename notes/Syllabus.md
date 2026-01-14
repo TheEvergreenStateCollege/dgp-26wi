@@ -51,6 +51,23 @@ This list and how it is scheduled for each class is subject to change.
 # Accessibility and Inclusiveness
 Our goal is to create an inclusive learning environment where all learners feel as welcome as possible. We aim to use all available technology and tools at an appropriate level so that the learning experience enhances and allows an effective and comfortable experience. If you would like to request access services or accommodations for a disability, please use the information at 
 [Evergreen's Access Services for Students with Disabilities](https://www.evergreen.edu/offices-services/access-services-for-students-with-disabilities) . You are welcome to contact Paul personally or CC him on emails with Access Services. If you are a continuing computer science student who has been part of the [TRIO Program](https://www.evergreen.edu/offices-services/trio-student-success-disability-support/trio-services-application) , you can continue to work with them to request support
+
+# Evaluation Sentences
+As the course progresses, there are helpful mindsets and behaviors you can demonstrate in class that will help your learning and those of your classmates.
+
+We will add sentences here as we progress. If you would like to earn one of these sentences in your evaluation, volunteer to drive or navigate in class, or accept when you are volunteered.
+
+Driver sentences:
+```
+*x* demonstrated an open-minded willingness to work through their development setup in front of the class, with guidance and support, instead of remaining stuck.
+```
+
+Navigator sentences:
+```
+*y* was a supportive navigator in class, able to detect what step of the development setup their classmate was on,
+  * providing guidance on what to type or click to resolve it
+  * able to bring in more support from other classmates by asking targeted questions
+```
 # Team Formation and Pair Programming
 Students will work in teams of one to three, dividing up tasks between them, during the first week after an introductory activity and more pair / mob programming.
 # How Will Students Be Evaluated for Credit
