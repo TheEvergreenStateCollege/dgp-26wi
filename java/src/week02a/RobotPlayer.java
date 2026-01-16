@@ -1,18 +1,9 @@
-package examplefuncsplayer;
+package week02a;
 
 import battlecode.common.*;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
 import java.util.Random;
-import java.util.Set;
-
-import java.util.EnumMap;
-import java.util.List;
-import java.util.PriorityQueue;
-import java.util.stream.Stream;
+import battlecode.common.GameActionException;
 
 
 /**
@@ -77,29 +68,11 @@ public class RobotPlayer {
                 // different types. Here, we separate the control depending on the UnitType, so we can
                 // use different strategies on different robots. If you wish, you are free to rewrite
                 // this into a different control structure!
+                 if (rc.getType().isRatKingType()) {
 
-                // Every 10 turns, print out what type of robot we are.
-                if (turnCount % 100 == 0) {
-                    System.out.println("Turn " + turnCount + ": I am a " + rc.getType().toString());
-                }
+                    runRatKing(rc);
+		         }
 
-                if (rc.canMove(directions[0])) {
-                    rc.move(directions[0]);
-                }
-
-                // Try to move forward one step.
-                if (rc.canMoveForward()) {
-                    System.out.println("Turn " + turnCount + ": Trying to move " + rc.getDirection());
-                    rc.moveForward();
-                } else {
-                    System.out.println("couldn't move forward on turn " + turnCount + " at location " + rc.getLocation() + " facing " + rc.getDirection());
-                    // If we can't move forward, try to turn a random direction.
-                    int randomDirection = rng.nextInt(directions.length);
-                    
-                    if (rc.canTurn()) {
-                        rc.turn(directions[randomDirection]);
-                    }
-                }
             } catch (GameActionException e) {
                 // Oh no! It looks like we did something illegal in the Battlecode world. You should
                 // handle GameActionExceptions judiciously, in case unexpected events occur in the game
@@ -120,5 +93,9 @@ public class RobotPlayer {
         }
 
         // Your code should never reach here (unless it's intentional)! Self-destruction imminent...
+    }
+
+    public static void runRatKing(RobotController rc) throws GameActionException {
+
     }
 }

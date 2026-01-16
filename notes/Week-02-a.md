@@ -6,8 +6,8 @@
 Review:
 * Introduction activity: strategy for games described as an English sentence
 * Canvas Discussion boards for questions
-* [Homework 01 released](), due in one week (Thursday, Jan 15) 
-* [Syllabus](), and evaluation sentences
+* [Homework 01 released](../homeworks/HW-01.md), due in one week (Thursday, Jan 15) 
+* [Syllabus](./Syllabus.md), and evaluation sentences
 
 
 
@@ -152,30 +152,6 @@ Compile it
 and run it in your Battlecode Client.
 
 We'll come back to the main room to debrief before returning to breakout rooms.
-
-### The Need for Git (In-Class Activity)
-
-The situation: last time, we had a driver (Gabriel) who worked on some code, that now we wish to share with the rest of the class. After our previous activity, one of you in each team has typed code and has it on their computer, but the other teammates don't have it.
-
-This will occur for all of you when you are working with your teammates, developing your own Battlecode player, or in the future when doing in-class activities.
-
-Write down your answers to the following questions, you'll submit them at the end.
-
-* What are two ways that you already know how to transfer code from one person to another? (Assume you don't know Git).
-* What is a pro and con of each of the two ways above?
-
-We are now going to share code by using ZIP files. In pairs (breakout rooms), name one of you as Partner A and the other as Partner B. Using whatever means you know how to do or can look up with Google, create a ZIP file of your cloned `dgp-26wi` directory. Message and send this ZIP file to 
-
-* What are three (or more) advantages of using ZIP files to share code?
-* What are three (or more) disadvantages of ZIP files?
-
-### Submit
-
-Now it's time to submit your answers to 
-* Pair Programming Review
-* The Need for Git
-
-[into this Canvas assignment.]()
 
 ### Next Time
 
