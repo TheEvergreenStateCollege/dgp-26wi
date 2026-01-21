@@ -1,6 +1,7 @@
 package week02a;
 
 import battlecode.common.*;
+import lectureplayer.RobotPlayer.SqueakType;
 
 import java.util.Random;
 
@@ -97,14 +98,10 @@ public class RobotPlayer {
     public static void moveRandom(RobotController rc) throws GameActionException {
         MapLocation forwardLoc = rc.adjacentLocation(rc.getDirection());
 
-        if (rc.canRemoveDirt(forwardLoc)) {
-            rc.removeDirt(forwardLoc);
-        }
-
         if (rc.canMoveForward()) {
             rc.moveForward();
         } else {
-            Direction random = directions[rand.nextInt(directions.length)];
+            Direction random = directions[rand.nextInt(directions.length-1)];
 
             if (rc.canTurn()) {
                 rc.turn(random);
@@ -113,6 +110,23 @@ public class RobotPlayer {
     }
 
     public static void runRatKing(RobotController rc) throws GameActionException {
+        int currentCost = rc.getCurrentRatCost();
+
+        MapLocation[] potentialSpawnLocations = rc.getAllLocationsWithinRadiusSquared(rc.getLocation(), 8);
+        boolean spawn = currentCost <= 10 || rc.getAllCheese() > currentCost + 2500;
+
+        for (MapLocation loc : potentialSpawnLocations) {
+            if (spawn && rc.canBuildRat(loc)) {
+                rc.buildRat(loc);
+                break;
+            }
+
+            if (rc.canPickUpCheese(loc)) {
+                rc.pickUpCheese(loc);
+                break;
+            }
+        }
+        moveRandom(rc);
 
     }
 }
