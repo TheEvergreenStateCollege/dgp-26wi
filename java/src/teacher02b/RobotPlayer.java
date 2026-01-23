@@ -180,6 +180,14 @@ public class RobotPlayer {
             rc.turn(toKing);
         }
 
+        if (kingLoc.distanceSquaredTo(rc.getLocation()) <= 4 ){
+
+        if (rc.canTransferCheese(kingLoc, rawCheese)) {
+                        rc.transferCheese(kingLoc, rawCheese);
+                        currentState = State.FIND_CHEESE;
+                    }
+        }
+
         if (rc.canRemoveDirt(nextLoc)) {
             rc.removeDirt(nextLoc);
         }

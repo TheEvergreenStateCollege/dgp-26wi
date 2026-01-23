@@ -1,4 +1,4 @@
-package week02a;
+package week03a;
 
 import battlecode.common.*;
 import lectureplayer.RobotPlayer.SqueakType;
